@@ -1,4 +1,4 @@
-{% set version = '1.2.3' %}
+{% set version = "1.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Polychrome_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Polychrome/Polychrome_{{ version }}.tar.gz
-  sha256: 681c1ad188549d789796ade076c49249823f94619ead834857cfb911501030bb
+  sha256: 0618a03b7cd51c47c32a80f621899216a18453bdd9ea6e9a3287c65c924cbcf5
 
 build:
   merge_build_host: True  # [win]
