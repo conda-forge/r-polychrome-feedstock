@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-colorspace
@@ -39,9 +39,10 @@ test:
 
 about:
   home: http://oompa.r-forge.r-project.org/
-  license: Apache 2.0
+  license: Apache-2.0
   summary: Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors. See Coombes and colleagues (2019) <doi:10.18637/jss.v090.c01>.
   license_family: APACHE
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:

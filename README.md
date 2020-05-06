@@ -3,7 +3,7 @@ About r-polychrome
 
 Home: http://oompa.r-forge.r-project.org/
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
