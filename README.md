@@ -5,11 +5,9 @@ Home: http://oompa.r-forge.r-project.org/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-polychrome-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors. See Coombes and colleagues (2019) <doi:10.18637/jss.v090.c01>.
-
-
 
 Current build status
 ====================
