@@ -1,6 +1,5 @@
 {% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-polychrome
@@ -13,8 +12,7 @@ source:
   sha256: 6fe7da62459d7b94b1a8516a4626971cf35b76331f46e36798b05d29aa00d143
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
