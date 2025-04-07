@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Polychrome_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Polychrome/Polychrome_{{ version }}.tar.gz
-  sha256: 6fe7da62459d7b94b1a8516a4626971cf35b76331f46e36798b05d29aa00d143
+  sha256: 3cf73d06faa1937b6b940fa12ca01f96c353f23cca73408107919dc15d9b9da2
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
