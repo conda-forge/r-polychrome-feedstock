@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Polychrome_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Polychrome/Polychrome_{{ version }}.tar.gz
-  sha256: 6fe7da62459d7b94b1a8516a4626971cf35b76331f46e36798b05d29aa00d143
+  sha256: 3cf73d06faa1937b6b940fa12ca01f96c353f23cca73408107919dc15d9b9da2
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,11 +22,11 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >=4.4
     - r-colorspace
     - r-scatterplot3d
   run:
-    - r-base
+    - r-base >=4.4
     - r-colorspace
     - r-scatterplot3d
 
@@ -40,7 +40,8 @@ about:
   license: Apache-2.0
   summary: Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors. See Coombes and colleagues (2019) <doi:10.18637/jss.v090.c01>.
   license_family: APACHE
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
